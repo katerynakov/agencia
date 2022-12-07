@@ -1,0 +1,375 @@
+@import "__nullstyle";
+@import "__fonts";
+
+
+
+.main {
+}
+.body {
+  font-family: "arial";
+  font-weight: 500;
+  font-size: 1.2vw;
+  color: black;
+  width: 100%;
+}
+.menu-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%;
+  width: 100%;
+  // background: grey;
+  padding: 0.5vw 1vw;
+}
+.container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  width: 100%;
+  // background: grey;
+  padding: 3vw 0 3vw 0;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  &__logo {
+    width: fit-content;
+    img {
+      width: 25vw;
+    }
+  }
+  &__unit {
+    display: inline-flex;
+
+    li {
+      margin: 1vw;
+    }
+  }
+  &__lang {
+    text-align: right;
+    text-transform: uppercase;
+  }
+}
+
+.footer {
+  &__body {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    img {
+      width: 25vw;
+    }
+  }
+
+  &__contacts {
+    img {
+      width: 2vw;
+    }
+    &_f-logo {
+      margin-top: 1vw;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+.carousel {
+  height: 500px;
+  overflow: hidden;
+}
+
+.headincl {
+  height: 100px;
+}
+
+.body-title {
+  display: flex;
+
+  align-items: center;
+  margin: 3vw 0 3vw 5vw;
+
+  h2 {
+  }
+}
+.h2_img,
+.h3_img {
+  width: 5vw;
+}
+.about-main {
+  &__body {
+    &_title {
+    }
+
+    &_img {
+    }
+
+    &_text {
+      margin-top: 3vw;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      line-height: 150%;
+    }
+  }
+}
+.forwhom-main {
+  &__body {
+    h3 {
+    }
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    img {
+      width: 10vw;
+    }
+    &_business {
+    }
+
+    &_gromadam {
+    }
+
+    &_invest {
+    }
+  }
+}
+h2 {
+  font-size: 2vw;
+  width: fit-content;
+  margin-left: 2%;
+  text-transform: uppercase;
+  
+}
+h3 {
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 2%;
+  font-family: "oswald";
+  color:#f7c011;
+  font-size: 2vw;
+}
+.h3-title{
+  display: flex;
+  align-items: center;
+ 
+}
+
+.odesaoblast {
+  &__body {
+    width: 100%;
+    &_title {
+    }
+
+    &_infographic {
+      padding-top: 3vw;
+    }
+  }
+}
+.infographic {
+  &_title {
+
+  }
+
+  &_description {
+    margin-top: 2vw;
+  }
+}
+.top-block {
+  display: flex;
+  justify-content: center;
+  margin: 3vw 0;
+  width: 100%;
+  &_item {
+    width: 30%;
+
+    display: inline-block;
+    margin: 0 3vw;
+    text-align: center;
+    justify-content: center;
+  }
+}
+.number {
+  font-family: "Oswald";
+  font-size: 6vw;
+  color: #f7c011;
+  font-weight: 600;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.description {
+  padding-top: 1vw;
+}
+.number-min {
+  font-size: 3vw;
+}
+
+.about-page {
+  &__top {
+    line-height: 150%;
+    display: block;
+    &_img {
+      display: flex;
+      img {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    &_text {
+      margin-top: 5vw;
+      P {
+        width: 80%;
+
+        text-align: justify;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &__misia {
+    display: flex;
+    margin: 7vw 0 0 0;
+    &_body {
+    }
+    &_title {
+    }
+    &_text {
+      margin-top: 3vw;
+      P {
+        text-align: justify;
+      }
+    }
+    &_img {
+      width: 50vw;
+      img {
+        align-items: end;
+        width: 100%;
+      }
+    }
+  }
+  &__do{
+    &_body{
+
+    }
+   
+
+  }
+  &__perevagy {
+    &_title {
+    }
+    &_unit {
+      padding-left: 8vw;
+       li::before {
+        content: "";
+        background: url("../img/Check-Mark.svg") no-repeat ;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        margin-right: 0.5vw;
+        vertical-align: middle;
+      }
+    }
+   
+    &_item {
+      padding-bottom: 1vw;
+     
+      
+    }
+  }
+}
+.do {
+ 
+  &__unit {
+    padding-left: 8vw;
+    display: flex;
+    padding-bottom: 2vw;
+    width: 85%;
+    text-align: justify;
+      line-height: 180%;
+    &_title {
+      font-family: "oswald";
+      font-weight: 600;
+      font-size: 2vw;
+      color: #f7c011;
+     
+    }
+
+    &_text {
+    }
+  }
+}
+
+.forwhom-page {
+width: 100%;
+  &__title {
+    display: flex;
+    align-items: center;
+  }
+  &__top-unit-img {
+    width: 20vw;
+  }
+  &__unit {
+display: flex;
+justify-content: space-between;
+&_L{
+  width:30%;
+}
+&_R{
+  width:60%;
+}
+    &_item {
+      padding-bottom: 1vw;
+      h4{
+        padding-bottom: 1vw;
+      }
+      li{
+        padding-bottom: 1vw;
+        p{
+          margin-left: 3vw;
+          padding: 0.5vw 0;
+        }
+      }
+     
+      li::before {
+        content: "";
+        background: url("../img/Check-Mark.svg");
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        margin-right: 0.5vw;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.contacts {
+
+  &__forma {
+    width: 100%;
+  }
+
+  &__body {
+width: 100%;
+    &_title {}
+
+    &_text {
+      margin-left: 5vw;
+      li{
+        line-height: 180%;
+      }
+    }
+
+    &_map {}
+  }
+}

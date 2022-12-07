@@ -1,0 +1,483 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul, li {
+  list-style: none;
+  color: black;
+  outline: none !important;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+  color: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number],
+input[type=number]:hover,
+input[type=number]:focus {
+  -webkit-appearance: none;
+          appearance: none;
+  -moz-appearance: textfield;
+}
+
+button {
+  background: none;
+}
+
+.btn, button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+a, a:link, a:hover, a:visited, a:focus, a:active {
+  color: black;
+  text-decoration: none;
+  -webkit-appearance: none;
+  outline: none !important;
+}
+
+a:hover {
+  color: red;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("/fonts/Oswald-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("/fonts/Oswald-Medium.ttf") format("ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("fonts/Oswald-Regular.ttf") format("ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Light.ttf") format("ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Regular.ttf") format("ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Medium.ttf") format("ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+.body {
+  font-family: "arial";
+  font-weight: 500;
+  font-size: 1.2vw;
+  color: black;
+  width: 100%;
+}
+
+.menu-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%;
+  width: 100%;
+  padding: 0.5vw 1vw;
+}
+
+.container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  width: 100%;
+  padding: 3vw 0 3vw 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.menu__logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.menu__logo img {
+  width: 25vw;
+}
+.menu__unit {
+  display: inline-flex;
+}
+.menu__unit li {
+  margin: 1vw;
+}
+.menu__lang {
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.footer__body {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__logo img {
+  width: 25vw;
+}
+.footer__contacts img {
+  width: 2vw;
+}
+.footer__contacts_f-logo {
+  margin-top: 1vw;
+}
+.footer__contacts p {
+  margin-bottom: 0;
+}
+
+.carousel {
+  height: 500px;
+  overflow: hidden;
+}
+
+.headincl {
+  height: 100px;
+}
+
+.body-title {
+  display: flex;
+  align-items: center;
+  margin: 3vw 0 3vw 5vw;
+}
+.h2_img,
+.h3_img {
+  width: 5vw;
+}
+
+.about-main__body_text {
+  margin-top: 3vw;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 150%;
+}
+
+.forwhom-main__body {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.forwhom-main__body img {
+  width: 10vw;
+}
+h2 {
+  font-size: 2vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 2%;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 2%;
+  font-family: "oswald";
+  color: #f7c011;
+  font-size: 2vw;
+}
+
+.h3-title {
+  display: flex;
+  align-items: center;
+}
+
+.odesaoblast__body {
+  width: 100%;
+}
+.odesaoblast__body_infographic {
+  padding-top: 3vw;
+}
+
+.infographic_description {
+  margin-top: 2vw;
+}
+
+.top-block {
+  display: flex;
+  justify-content: center;
+  margin: 3vw 0;
+  width: 100%;
+}
+.top-block_item {
+  width: 30%;
+  display: inline-block;
+  margin: 0 3vw;
+  text-align: center;
+  justify-content: center;
+}
+
+.number {
+  font-family: "Oswald";
+  font-size: 6vw;
+  color: #f7c011;
+  font-weight: 600;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.description {
+  padding-top: 1vw;
+}
+
+.number-min {
+  font-size: 3vw;
+}
+
+.about-page__top {
+  line-height: 150%;
+  display: block;
+}
+.about-page__top_img {
+  display: flex;
+}
+.about-page__top_img img {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-page__top_text {
+  margin-top: 5vw;
+}
+.about-page__top_text P {
+  width: 80%;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-page__misia {
+  display: flex;
+  margin: 7vw 0 0 0;
+}
+.about-page__misia_text {
+  margin-top: 3vw;
+}
+.about-page__misia_text P {
+  text-align: justify;
+}
+.about-page__misia_img {
+  width: 50vw;
+}
+.about-page__misia_img img {
+  align-items: end;
+  width: 100%;
+}
+.about-page__perevagy_unit {
+  padding-left: 8vw;
+}
+.about-page__perevagy_unit li::before {
+  content: "";
+  background: url("../img/Check-Mark.svg") no-repeat;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 0.5vw;
+  vertical-align: middle;
+}
+.about-page__perevagy_item {
+  padding-bottom: 1vw;
+}
+
+.do__unit {
+  padding-left: 8vw;
+  display: flex;
+  padding-bottom: 2vw;
+  width: 85%;
+  text-align: justify;
+  line-height: 180%;
+}
+.do__unit_title {
+  font-family: "oswald";
+  font-weight: 600;
+  font-size: 2vw;
+  color: #f7c011;
+}
+.forwhom-page {
+  width: 100%;
+}
+.forwhom-page__title {
+  display: flex;
+  align-items: center;
+}
+.forwhom-page__top-unit-img {
+  width: 20vw;
+}
+.forwhom-page__unit {
+  display: flex;
+  justify-content: space-between;
+}
+.forwhom-page__unit_L {
+  width: 30%;
+}
+.forwhom-page__unit_R {
+  width: 60%;
+}
+.forwhom-page__unit_item {
+  padding-bottom: 1vw;
+}
+.forwhom-page__unit_item h4 {
+  padding-bottom: 1vw;
+}
+.forwhom-page__unit_item li {
+  padding-bottom: 1vw;
+}
+.forwhom-page__unit_item li p {
+  margin-left: 3vw;
+  padding: 0.5vw 0;
+}
+.forwhom-page__unit_item li::before {
+  content: "";
+  background: url("../img/Check-Mark.svg");
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 0.5vw;
+  vertical-align: middle;
+}
+
+.contacts__forma {
+  width: 100%;
+}
+.contacts__body {
+  width: 100%;
+}
+.contacts__body_text {
+  margin-left: 5vw;
+}
+.contacts__body_text li {
+  line-height: 180%;
+}/*# sourceMappingURL=style.css.map */
