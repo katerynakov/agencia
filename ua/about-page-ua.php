@@ -16,28 +16,9 @@
 
 <body class="body">
 
-    <header>
-        <div class="menu-container">
-            <div class="menu">
-                <a href="../../index.html">
-                    <div class="menu__logo"><img src="../img/logo.png" alt="logo"></div>
-                </a>
-                <div class="menu__unit">
-                    <li><a href="/ua/about-page-ua.html">Про нас</a></li>
-                    <li><a href="../ua/team-ua.html">Команда</a></li>
-                    <li><a href="../ua/forwhom-ua.html">Для кого</a></li>
-                    <li><a href="../news-ua.html">Новини</a></li>
-                    <li><a href="../ua/contacts-ua.html">Контакти</a></li>
-                    <li><a target="_blank" href=" https://proukraine.com.ua/map/">Інвестиційний портал</a></li>
-                </div>
-                <!-- en/ua -->
-                <div class="menu__lang">
-                    <li>UA</li>
-                    <li>EN</li>
-                </div>
-            </div>
-        </div>
-    </header>
+<?php
+    include('header-ua.php');
+    ?>
     <section class="main">
         <section class="about-page">
             <div class="container">
@@ -172,19 +153,10 @@
 
 
     </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__body">
-                <div class="footer__logo"><a href="../index.html"><img src="../img/logo.png" alt=""></a></div>
-                <div class="footer__contacts">
-                    <p>тел.: <a href="tel:+380933873555">(093) 387-35-55</a></p>
-                    <p>e-mail: <a href="mailto:odesarda@gmail.com">odesarda@gmail.com</a></p>
-                    <p>вул. Рішельєвська, 8, м. Одеса, Україна, 65026</p>
-                    <p class="footer__contacts_f-logo"><img src="img/facebook.svg" alt=""></p>
-                </div>
-            </div>
-        </div>
-    </footer>
+
+    <?php
+    include('footer-ua.php');
+    ?>
 </body>
 
 </html>

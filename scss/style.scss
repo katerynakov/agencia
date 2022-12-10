@@ -1,8 +1,6 @@
 @import "__nullstyle";
 @import "__fonts";
 
-
-
 .main {
 }
 .body {
@@ -59,7 +57,7 @@
   &__body {
     display: flex;
     width: 100%;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
   }
   &__logo {
@@ -76,7 +74,7 @@
       margin-top: 1vw;
     }
     p {
-      margin-bottom: 0;
+     line-height: 150%;
     }
   }
 }
@@ -145,7 +143,9 @@ h2 {
   width: fit-content;
   margin-left: 2%;
   text-transform: uppercase;
-  
+  color: #2c7bda;
+  font-family: "oswald";
+  font-weight: 500;
 }
 h3 {
   font-size: 1.5vw;
@@ -153,13 +153,12 @@ h3 {
   text-align: center;
   margin-left: 2%;
   font-family: "oswald";
-  color:#f7c011;
+  color: #f4b400;
   font-size: 2vw;
 }
-.h3-title{
+.h3-title {
   display: flex;
   align-items: center;
- 
 }
 
 .odesaoblast {
@@ -175,7 +174,6 @@ h3 {
 }
 .infographic {
   &_title {
-
   }
 
   &_description {
@@ -257,21 +255,18 @@ h3 {
       }
     }
   }
-  &__do{
-    &_body{
-
+  &__do {
+    &_body {
     }
-   
-
   }
   &__perevagy {
     &_title {
     }
     &_unit {
       padding-left: 8vw;
-       li::before {
+      li::before {
         content: "";
-        background: url("../img/Check-Mark.svg") no-repeat ;
+        background: url("../img/Check-Mark.svg") no-repeat;
         width: 15px;
         height: 15px;
         display: inline-block;
@@ -279,29 +274,25 @@ h3 {
         vertical-align: middle;
       }
     }
-   
+
     &_item {
       padding-bottom: 1vw;
-     
-      
     }
   }
 }
 .do {
- 
   &__unit {
     padding-left: 8vw;
     display: flex;
     padding-bottom: 2vw;
     width: 85%;
     text-align: justify;
-      line-height: 180%;
+    line-height: 180%;
     &_title {
       font-family: "oswald";
       font-weight: 600;
       font-size: 2vw;
       color: #f7c011;
-     
     }
 
     &_text {
@@ -310,7 +301,7 @@ h3 {
 }
 
 .forwhom-page {
-width: 100%;
+  width: 100%;
   &__title {
     display: flex;
     align-items: center;
@@ -319,27 +310,27 @@ width: 100%;
     width: 20vw;
   }
   &__unit {
-display: flex;
-justify-content: space-between;
-&_L{
-  width:30%;
-}
-&_R{
-  width:60%;
-}
+    display: flex;
+    justify-content: space-between;
+    &_L {
+      width: 30%;
+    }
+    &_R {
+      width: 60%;
+    }
     &_item {
       padding-bottom: 1vw;
-      h4{
+      h4 {
         padding-bottom: 1vw;
       }
-      li{
+      li {
         padding-bottom: 1vw;
-        p{
+        p {
           margin-left: 3vw;
           padding: 0.5vw 0;
         }
       }
-     
+
       li::before {
         content: "";
         background: url("../img/Check-Mark.svg");
@@ -354,22 +345,54 @@ justify-content: space-between;
 }
 
 .contacts {
-
   &__forma {
     width: 100%;
   }
 
   &__body {
-width: 100%;
-    &_title {}
+    width: 100%;
+    &_title {
+    }
 
     &_text {
       margin-left: 5vw;
-      li{
+      li {
         line-height: 180%;
       }
     }
 
-    &_map {}
+    &_map {
+    }
   }
+}
+
+.team{
+  &__body{
+    width: 100%;
+  }
+}
+
+
+.team {
+
+		&__body {}
+
+		&__unit {
+
+			&_item-img {
+        padding: 2vw;
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+
+			&_item-title {
+        font-family: "oswald";
+        font-size: inherit + ;
+        padding-bottom: 1vw;
+      }
+
+			&_item-description {}
+		}
 }

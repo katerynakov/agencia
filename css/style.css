@@ -239,7 +239,7 @@ a:hover {
 .footer__body {
   display: flex;
   width: 100%;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
 }
 .footer__logo img {
@@ -252,7 +252,7 @@ a:hover {
   margin-top: 1vw;
 }
 .footer__contacts p {
-  margin-bottom: 0;
+  line-height: 150%;
 }
 
 .carousel {
@@ -298,6 +298,9 @@ h2 {
   width: fit-content;
   margin-left: 2%;
   text-transform: uppercase;
+  color: #2c7bda;
+  font-family: "oswald";
+  font-weight: 500;
 }
 
 h3 {
@@ -306,7 +309,7 @@ h3 {
   text-align: center;
   margin-left: 2%;
   font-family: "oswald";
-  color: #f7c011;
+  color: #f4b400;
   font-size: 2vw;
 }
 
@@ -480,4 +483,19 @@ h3 {
 }
 .contacts__body_text li {
   line-height: 180%;
+}
+.team__body {
+  width: 100%;
+}
+
+.team__unit_item-img {
+  padding: 2vw;
+}
+.team__unit_item-img img {
+  width: 100%;
+  height: auto;
+}
+.team__unit_item-title {
+  font-family: "oswald";
+  padding-bottom: 1vw;
 }/*# sourceMappingURL=style.css.map */

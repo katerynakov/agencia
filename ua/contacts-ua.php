@@ -16,28 +16,11 @@
 
 <body class="body">
 
-    <header>
-        <div class="menu-container">
-            <div class="menu">
-                <a href="../../index.html">
-                    <div class="menu__logo"><img src="../img/logo.png" alt="logo"></div>
-                </a>
-                <div class="menu__unit">
-                    <li><a href="/ua/about-page-ua.html">Про нас</a></li>
-                    <li><a href="../ua/team-ua.html">Команда</a></li>
-                    <li><a href="../ua/forwhom-ua.html">Для кого</a></li>
-                    <li><a href="../news-ua.html">Новини</a></li>
-                    <li><a href="../ua/contacts-ua.html">Контакти</a></li>
-                    <li><a target="_blank" href=" https://proukraine.com.ua/map/">Інвестиційний портал</a></li>
-                </div>
-                <!-- en/ua -->
-                <div class="menu__lang">
-                    <li>UA</li>
-                    <li>EN</li>
-                </div>
-            </div>
-        </div>
-    </header>
+    
+<?php
+    include('header-ua.php');
+    ?>
+    
     <section class="main">
         <section class="contacts">
 
@@ -78,6 +61,9 @@
 
         </section>
     </section>
+    <?php
+    include('footer-ua.php');
+    ?>
 </body>
 
 </html>
