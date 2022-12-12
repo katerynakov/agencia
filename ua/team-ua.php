@@ -24,6 +24,7 @@
     ?>
 
     <section class="main">
+ 
         <div class="team">
             <div class="container">
                 <div class="team__body">

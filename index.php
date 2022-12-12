@@ -14,11 +14,10 @@
 
     <link rel="stylesheet" href="../agencia/css/style.css">
 
-    <script type=text/js defer src="../agencia/js/main.js"></script>
+    <script type=text/js defer src="../js/main.js"></script>
 </head>
 
-<body class="body">
-
+<body class="body parallax">
 <header>
         <div class="menu-container">
             <div class="menu">
@@ -33,8 +32,7 @@
                 </div>
                 <!-- en/ua -->
                 <div class="menu__lang">
-                    <li>UA</li>
-                    <li>EN</li>
+                
                 </div>
             </div>
         </div>
@@ -45,12 +43,13 @@
 
 
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel_title">Одеська область</div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../agencia/img/odessa1.jpg" class="d-block w-100" alt="...">
+                        <img src="../agencia/img/ods-obl-1.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="../agencia/img/odessa2.jpg" class="d-block w-100" alt="...">
+                        <img src="../agencia/img/ods-obl-2.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
                         <img src="../agencia/img/odessa3.jpg" class="d-block w-100" alt="...">
@@ -82,7 +81,7 @@
                     <div class="about-main__body_text">
                         <p>Агенція регіонального розвитку Одеської області - це неприбуткова та не бюджетна установа, що
                             створена на засадах партнерства між державним, приватним та громадським секторами з метою
-                            ефективної реалізації державної регіональної політики. Детальніше...</p>
+                            ефективної реалізації державної регіональної політики. <a class="about-main__body_text-a" href="../agencia/ua/about-page-ua.php">Детальніше...</a></p>
                     </div>
 
 

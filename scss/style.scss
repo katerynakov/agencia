@@ -1,9 +1,25 @@
 @import "__nullstyle";
 @import "__fonts";
 
-.main {
+
+
+
+.parallax {
+
 }
 .body {
+    background: url('../img/bg-2.jpg');
+    /* Full height */
+    width: 100%;
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
   font-family: "arial";
   font-weight: 500;
   font-size: 1.2vw;
@@ -42,7 +58,9 @@
   }
   &__unit {
     display: inline-flex;
-
+a{
+  color: black;
+}
     li {
       margin: 1vw;
     }
@@ -54,6 +72,7 @@
 }
 
 .footer {
+  font-size: 1vw;
   &__body {
     display: flex;
     width: 100%;
@@ -81,6 +100,24 @@
 .carousel {
   height: 500px;
   overflow: hidden;
+vertical-align: middle;
+position: relative;
+&_title{
+  display: flex;
+  min-width: 100%;
+  height: 100%;
+  justify-content: center;
+align-items: center;
+position: absolute;
+z-index: 100;
+font-size: 5vw;
+font-family: "oswald";
+color: white;
+text-shadow: 1px 1px 3px black;
+}
+}
+.carousel-control-prev, .carousel-control-next{
+  z-index: 1000;
 }
 
 .headincl {
@@ -116,6 +153,12 @@
       text-align: center;
       line-height: 150%;
     }
+      a{
+     color: #2c7bda;
+     font-size: 1.3vw;
+      font-weight: 600;
+      }
+    
   }
 }
 .forwhom-main {
@@ -153,8 +196,10 @@ h3 {
   text-align: center;
   margin-left: 2%;
   font-family: "oswald";
-  color: #f4b400;
+  
+  color: #2c7bda;
   font-size: 2vw;
+  font-weight: 500;
 }
 .h3-title {
   display: flex;
@@ -355,10 +400,19 @@ h3 {
     }
 
     &_text {
-      margin-left: 5vw;
+      display: flex;
+      min-width: 100%;
+      justify-content: space-around;
+      div{
+        width: 50%;
+      }
       li {
         line-height: 180%;
+        img{
+          width: 2vw;
+        }
       }
+
     }
 
     &_map {
@@ -389,10 +443,11 @@ h3 {
 
 			&_item-title {
         font-family: "oswald";
-        font-size: inherit + ;
+        font-size: inherit;
         padding-bottom: 1vw;
       }
 
 			&_item-description {}
 		}
 }
+

@@ -1,11 +1,29 @@
-<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_263_338)">
-<path d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.307 0 128C0 191.888 46.808 244.843 108 254.445V165H75.5V128H108V99.8C108 67.72 127.11 50 156.347 50C170.352 50 185 52.5 185 52.5V84H168.86C152.958 84 148 93.867 148 103.99V128H183.5L177.825 165H148V254.445C209.192 244.843 256 191.889 256 128Z" fill="#1877F2"/>
-<path d="M177.825 165L183.5 128H148V103.99C148 93.866 152.959 84 168.86 84H185V52.5C185 52.5 170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5V165H108V254.445C114.616 255.482 121.303 256.002 128 256C134.697 256.002 141.384 255.482 148 254.445V165H177.825Z" fill="white"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_00000158016784279486895710000018444998976873286833_);}
+	.st1{fill:#3187EF;}
+	.st2{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<g>
+			<defs>
+				<rect id="SVGID_1_" width="256" height="256"/>
+			</defs>
+			<clipPath id="SVGID_00000004524477748893883940000010408633541330425260_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_00000004524477748893883940000010408633541330425260_);">
+				<path class="st1" d="M256,128C256,57.3,198.7,0,128,0S0,57.3,0,128c0,63.9,46.8,116.8,108,126.4V165H75.5v-37H108V99.8
+					c0-32.1,19.1-49.8,48.3-49.8c14,0,28.7,2.5,28.7,2.5V84h-16.1C153,84,148,93.9,148,104v24h35.5l-5.7,37H148v89.4
+					C209.2,244.8,256,191.9,256,128z"/>
+				<path class="st2" d="M177.8,165l5.7-37H148v-24c0-10.1,5-20,20.9-20H185V52.5c0,0-14.6-2.5-28.7-2.5C127.1,50,108,67.7,108,99.8
+					V128H75.5v37H108v89.4c6.6,1,13.3,1.6,20,1.6s13.4-0.5,20-1.6V165H177.8z"/>
+			</g>
+		</g>
+	</g>
 </g>
-<defs>
-<clipPath id="clip0_263_338">
-<rect width="256" height="256" fill="white"/>
-</clipPath>
-</defs>
 </svg>

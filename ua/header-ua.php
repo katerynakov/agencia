@@ -13,8 +13,8 @@
     <script defer src="../agencia/bootstrap-5.2.3/js/bootstrap.js"></script>
 
     <link rel="stylesheet" href="../agencia/css/style.css">
-
-    <script type=text/js defer src="../agencia/js/main.js"></script>
+    <script defer src="../agencia/js/main.js"></script>
+   
 </head>
 
 <body class="body">
@@ -33,11 +33,13 @@
                 </div>
                 <!-- en/ua -->
                 <div class="menu__lang">
-                    <li>UA</li>
-                    <li>EN</li>
+                
                 </div>
             </div>
         </div>
     </header>
+
+
+  
 </body>
 </html>

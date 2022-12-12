@@ -113,12 +113,9 @@ button{
 }
 
 a, a:link, a:hover, a:visited, a:focus,a:active{
-    color: black;
+   color: inherit;
     text-decoration: none;
     -webkit-appearance: none;
     outline: none !important;
 }
 
-a:hover{
-    color: red;
-}
