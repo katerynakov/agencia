@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="../agencia/css/style.css">
     <script defer src="../agencia/js/main.js"></script>
-   
+    <link rel="icon" href="../img/favicon.png">
 </head>
 
 <body class="body">
@@ -27,7 +27,7 @@
                     <li><a href="../ua/about-page-ua.php">Про нас</a></li>
                     <li><a href="../ua/team-ua.php">Команда</a></li>
                     <li><a href="../ua/forwhom-ua.php">Для кого</a></li>
-                    <li><a href="../news-ua.php">Новини</a></li>
+                    <li><a href="../ua/news-ua.php">Новини</a></li>
                     <li><a href="../ua/contacts-ua.php">Контакти</a></li>
                     <li><a target="_blank" href=" https://proukraine.com.ua/map/">Інвестиційний портал</a></li>
                 </div>

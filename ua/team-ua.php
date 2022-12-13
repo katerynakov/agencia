@@ -28,6 +28,11 @@
         <div class="team">
             <div class="container">
                 <div class="team__body">
+                <div class="team__body_title body-title" >
+
+<img class="h2_img" src="../img/bluearrow.svg" alt="">
+<h2>Наша команда</h2>
+                </div>
                     <div class=" text-center">
                         <div class="row row-cols-3">
                             <div class="col team__unit">

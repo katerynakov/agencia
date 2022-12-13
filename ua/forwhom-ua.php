@@ -26,9 +26,9 @@
     <section class="main">
         <div class="container">
             <section class="forwhom-page">
-                <div class="forwhom-page__title h3-title">
-                    <img class="h3_img" src="../img/yellowarrow.svg" alt="">
-                    <h3>Громадам</h3>
+                <div class="forwhom-page__title body-title">
+                    <img class="h2_img" src="../img/bluearrow.svg" alt="">
+                    <h2>Громадам</h2>
                 </div>
                 <div class="forwhom-page__unit">
                     <div class="forwhom-page__unit_L">
@@ -74,9 +74,9 @@
                     </div>
 
                 </div>
-                <div class="forwhom-page__title h3-title">
-                    <img class="h3_img" src="../img/yellowarrow.svg" alt="">
-                    <h3>Малому та середньому бізнесу</h3>
+                <div class="forwhom-page__title body-title">
+                    <img class="h2_img" src="../img/bluearrow.svg" alt="">
+                    <h2>Малому та середньому бізнесу</h2>
                 </div>
                 <div class="forwhom-page__unit">
                     <div class="forwhom-page__unit_L">
@@ -125,9 +125,9 @@
                     </div>
 
                 </div>
-                <div class="forwhom-page__title h3-title">
-                    <img class="h3_img" src="../img/yellowarrow.svg" alt="">
-                    <h3>Інвесторам </h3>
+                <div class="forwhom-page__title body-title">
+                    <img class="h2_img" src="../img/bluearrow.svg" alt="">
+                    <h2>Інвесторам </h2>
                 </div>
                 <div class="forwhom-page__unit">
                     <div class="forwhom-page__unit_L">

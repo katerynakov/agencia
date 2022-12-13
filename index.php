@@ -74,7 +74,8 @@
             <div class="container">
                 <div class="about-main__body">
 
-                    <div class="about-main__body_title body-title">
+                    <div class="about-main__body_title body-title" >
+
                         <img class="h2_img" src="../agencia/img/bluearrow.svg" alt="">
                         <h2>Про Агенцію Розвитку Одеської області</h2>
                     </div>
@@ -91,18 +92,24 @@
         <section class="forwhom-main">
             <div class="container ">
                 <div class="forwhom-main__body">
-                    <div class="forwhom-main__body_business ">
-                        <img src="../agencia/img/business.svg" alt="">
-                        <h3>Бізнесу</h3>
-                    </div>
-                    <div class="forwhom-main__body_gromadam forwhom_item">
-                        <img src="../agencia/img/gromadam.svg" alt="">
-                        <h3>Громадам</h3>
-                    </div>
-                    <div class="forwhom-main__body_invest forwhom_item">
-                        <img src="../agencia/img/invest.svg" alt="">
-                        <h3>Інвесторам</h3>
-                    </div>
+                   <a href="../agencia/ua/forwhom-ua.php">
+                        <div class="forwhom-main__body_business ">
+                            <img src="../agencia/img/business.svg" alt="">
+                            <h3>Бізнесу</h3>
+                        </div>
+                   </a>
+                   <a  href="../agencia/ua/forwhom-ua.php">
+                        <div class="forwhom-main__body_gromadam forwhom_item">
+                            <img src="../agencia/img/gromadam.svg" alt="">
+                            <h3>Громадам</h3>
+                        </div>
+                   </a>
+                    <a  href="../agencia/ua/forwhom-ua.php">
+                        <div class="forwhom-main__body_invest forwhom_item">
+                            <img src="../agencia/img/invest.svg" alt="">
+                            <h3>Інвесторам</h3>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -143,7 +150,6 @@
                             <img class="h3_img" src="../agencia/img/yellowarrow.svg" alt="">
                             <h3>Кількість населення</h3>
                         </div>
-                        <div class="infographic_description"></div>
                         <div class="top-block">
                             <div class="top-block_item">
                                 <div class="number">2,4</div>
@@ -200,7 +206,6 @@
                             <img class="h3_img" src="../agencia/img/yellowarrow.svg" alt="">
                             <h3>Представлені всі види транспорту</h3>
                         </div>
-                        <div class="infographic_description"></div>
                         <div class="top-block">
                             <div class="top-block_item">
                                 <div class="number">5</div>
@@ -223,7 +228,6 @@
                             <img class="h3_img" src="../agencia/img/yellowarrow.svg" alt="">
                             <h3>Сприятливі умови для сільського господарства</h3>
                         </div>
-                        <div class="infographic_description"></div>
                         <div class="top-block">
                             <div class="top-block_item">
                                 <div class="number">2,5 <div class="number-min">млн. га</div></div>
@@ -235,9 +239,9 @@
                             </div>
 
                         </div>
-                        <div class="infographic_description"> Площа, що перевищює земельні ресурси низки країн ЄС,
+                        <!-- <div class="infographic_description"> Площа, що перевищює земельні ресурси низки країн ЄС,
                             наприклад: Австрії, Нідерландів та ін. Клімат - помірно-континетальний, рівнинна місцевість,
-                            грунт - чернозем.</div>
+                            грунт - чернозем.</div> -->
 
                     </div>
 
@@ -246,7 +250,6 @@
                             <img class="h3_img" src="../agencia/img/yellowarrow.svg" alt="">
                             <h3>Корисні копалини</h3>
                         </div>
-                        <div class="infographic_description"></div>
                         <div class="top-block">
                             <div class="top-block_item">
                                 <div class="number">145</div>
@@ -266,7 +269,6 @@
                                 Трудовий потенціал
                             </h3>
                         </div>
-                        <div class="infographic_description"></div>
                         <div class="top-block">
                             <div class="top-block_item">
                                 <div class="number">36</div>
@@ -290,7 +292,6 @@
                                 Бізнес середовище
                             </h3>
                         </div>
-                        <div class="infographic_description"></div>
                         <div class="top-block">
                             <div class="top-block_item">
                                 <div class="number">> 130 <div class="number-min">тис.</div></div>
@@ -371,9 +372,21 @@
 
 
     </section>
-    <?php
-    include('ua/footer-ua.php');
-    ?>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__body">
+                <div class="footer__logo"><a href="../../agencia/index.php"><img src="../../agencia/img/logo.png" alt=""></a></div>
+                <div class="footer__contacts">
+                <ul>
+                            <li> <img src="../agencia/img/contact/placeholder.svg" alt=""> вул. Рішельєвська, 8, м. Одеса, Україна, 65026</li>
+                            <li> <img src="../agencia/img/contact/telephone.svg" alt=""> <a href="tel:+380933873555">(093) 387-35-55</a></li>
+                            <li> <img src="../agencia/img/contact/mail.svg" alt=""> <a href="mailto:odesarda@gmail.com">odesarda@gmail.com</a></li>
+                            <li> <img src="../agencia/img/facebook.svg" alt=""> <a target="_blank" href="https://www.facebook.com/OdesaRDA">www.facebook.com/OdesaRDA</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </footer>
     
 </body>
 

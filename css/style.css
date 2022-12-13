@@ -181,6 +181,40 @@ a, a:link, a:hover, a:visited, a:focus, a:active {
   src: url("/fonts/Manrope-Bold.ttf") format("ttf");
   font-weight: 700;
 }
+h2 {
+  font-size: 2.5vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 0.8vw;
+  text-transform: uppercase;
+  color: #2c7bda;
+  font-family: "oswald";
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 2%;
+  font-family: "oswald";
+  color: #f4b400;
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+.h3-title {
+  display: flex;
+  align-items: center;
+  padding: 2vw 0;
+}
+
+h4 {
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+
 .body {
   background: url("../img/bg-2.jpg");
   /* Full height */
@@ -234,10 +268,17 @@ a, a:link, a:hover, a:visited, a:focus, a:active {
   display: inline-flex;
 }
 .menu__unit a {
-  color: black;
+  color: #184377;
+  font-weight: 600;
+}
+.menu__unit a:hover {
+  color: #2c7bda;
+}
+.menu__unit li:hover {
+  transform: scale(1.2);
 }
 .menu__unit li {
-  margin: 1vw;
+  margin: 0 1vw;
 }
 .menu__lang {
   text-align: right;
@@ -257,17 +298,25 @@ a, a:link, a:hover, a:visited, a:focus, a:active {
   width: 25vw;
 }
 .footer__contacts img {
-  width: 2vw;
+  width: 1.5vw;
+  margin-right: 0.8vw;
 }
-.footer__contacts_f-logo {
-  margin-top: 1vw;
+.footer__contacts li {
+  padding: 0 0 0.5vw 0;
+  display: flex;
+  align-items: center;
 }
-.footer__contacts p {
-  line-height: 150%;
+.footer__contacts a:hover {
+  color: #2c7bda;
+  font-weight: 600;
+}
+
+.photo {
+  overflow: hidden;
 }
 
 .carousel {
-  height: 500px;
+  height: 35vw;
   overflow: hidden;
   vertical-align: middle;
   position: relative;
@@ -284,6 +333,11 @@ a, a:link, a:hover, a:visited, a:focus, a:active {
   font-family: "oswald";
   color: white;
   text-shadow: 1px 1px 3px black;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item {
+  height: 35vw;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -317,41 +371,24 @@ a, a:link, a:hover, a:visited, a:focus, a:active {
   font-size: 1.3vw;
   font-weight: 600;
 }
+.about-main__body a:hover {
+  font-weight: 700;
+  color: #f4b400;
+}
 
 .forwhom-main__body {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
+.forwhom-main__body h3 {
+  color: #2c7bda;
+}
 .forwhom-main__body img {
   width: 10vw;
 }
-h2 {
-  font-size: 2vw;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-left: 2%;
-  text-transform: uppercase;
-  color: #2c7bda;
-  font-family: "oswald";
-  font-weight: 500;
-}
-
-h3 {
-  font-size: 1.5vw;
-  text-transform: uppercase;
-  text-align: center;
-  margin-left: 2%;
-  font-family: "oswald";
-  color: #2c7bda;
-  font-size: 2vw;
-  font-weight: 500;
-}
-
-.h3-title {
-  display: flex;
-  align-items: center;
+.forwhom-main__body a:hover {
+  transform: scale(1.2);
 }
 
 .odesaoblast__body {
@@ -443,6 +480,7 @@ h3 {
   background: url("../img/Check-Mark.svg") no-repeat;
   width: 15px;
   height: 15px;
+  transform: scale(1.2);
   display: inline-block;
   margin-right: 0.5vw;
   vertical-align: middle;
@@ -471,9 +509,10 @@ h3 {
 .forwhom-page__title {
   display: flex;
   align-items: center;
+  margin: 3vw 0 3vw 0;
 }
 .forwhom-page__top-unit-img {
-  width: 20vw;
+  width: 15vw;
 }
 .forwhom-page__unit {
   display: flex;
@@ -481,6 +520,9 @@ h3 {
 }
 .forwhom-page__unit_L {
   width: 30%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
 }
 .forwhom-page__unit_R {
   width: 60%;
@@ -489,10 +531,11 @@ h3 {
   padding-bottom: 1vw;
 }
 .forwhom-page__unit_item h4 {
-  padding-bottom: 1vw;
+  padding-bottom: 1.5vw;
 }
 .forwhom-page__unit_item li {
-  padding-bottom: 1vw;
+  padding-bottom: 0.5vw;
+  line-height: 150%;
 }
 .forwhom-page__unit_item li p {
   margin-left: 3vw;
@@ -500,9 +543,10 @@ h3 {
 }
 .forwhom-page__unit_item li::before {
   content: "";
-  background: url("../img/Check-Mark.svg");
+  background: url("../img/Check-Mark.svg") no-repeat;
   width: 15px;
   height: 15px;
+  transform: scale(1.2);
   display: inline-block;
   margin-right: 0.5vw;
   vertical-align: middle;
@@ -527,20 +571,28 @@ h3 {
 }
 .contacts__body_text li img {
   width: 2vw;
+  margin-right: 0.5vw;
 }
 .team__body {
   width: 100%;
 }
-
 .team__unit_item-img {
-  padding: 2vw;
+  padding: 3vw 3vw 1vw 3vw;
 }
 .team__unit_item-img img {
   width: 100%;
   height: auto;
+  border-radius: 5%;
 }
 .team__unit_item-title {
   font-family: "oswald";
-  font-size: inherit;
-  padding-bottom: 1vw;
+  font-size: 1.7vw;
+  padding-bottom: 0.7vw;
+  color: #2c7bda;
+}
+.soon {
+  padding: 2vw 0;
+  font-size: 5vw;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
