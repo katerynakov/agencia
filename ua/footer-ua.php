@@ -9,9 +9,9 @@
 </head>
 <body>
 <footer class="footer">
-        <div class="container">
+        <div class="container-footer">
             <div class="footer__body">
-                <div class="footer__logo"><a href="../../agencia/index.php"><img src="../../agencia/img/logo.png" alt=""></a></div>
+                <div class="footer__logo"><a href="../index.php"><img src="../img/logo.png" alt=""></a></div>
                 <div class="footer__contacts">
                 <ul>
                             <li> <img src="../img/contact/placeholder.svg" alt=""> вул. Рішельєвська, 8, м. Одеса, Україна, 65026</li>

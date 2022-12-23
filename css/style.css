@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@100;300;400;500;600;700;800&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -146,43 +149,50 @@ a, a:link, a:hover, a:visited, a:focus, a:active {
   outline: none !important;
 }
 
-@font-face {
-  font-family: "Oswald";
-  src: url("/fonts/Oswald-SemiBold.ttf") format("ttf");
-  font-weight: 600;
+#buttontothetop {
+  display: inline-block;
+  background: #612B8B;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  align-items: center;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  box-shadow: 0px 4px 14px rgba(67, 0, 98, 0.15);
 }
-@font-face {
-  font-family: "Oswald";
-  src: url("/fonts/Oswald-Medium.ttf") format("ttf");
-  font-weight: 500;
+
+#buttontothetop::after {
+  content: "↑";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
 }
-@font-face {
-  font-family: "Oswald";
-  src: url("fonts/Oswald-Regular.ttf") format("ttf");
-  font-weight: 400;
+
+#buttontothetop:hover {
+  cursor: pointer;
+  background: #00AAFF;
 }
-@font-face {
-  font-family: "Manrope";
-  src: url("/fonts/Manrope-Light.ttf") format("ttf");
-  font-weight: 300;
+
+#buttontothetop:active {
+  background: #0087cb;
 }
-@font-face {
-  font-family: "Manrope";
-  src: url("/fonts/Manrope-Regular.ttf") format("ttf");
-  font-weight: 400;
+
+#buttontothetop.show {
+  opacity: 1;
+  visibility: visible;
 }
-@font-face {
-  font-family: "Manrope";
-  src: url("/fonts/Manrope-Medium.ttf") format("ttf");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Manrope";
-  src: url("/fonts/Manrope-Bold.ttf") format("ttf");
-  font-weight: 700;
-}
+
 h2 {
-  font-size: 2.5vw;
+  font-size: 3vw;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -194,28 +204,31 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5vw;
   text-transform: uppercase;
   text-align: center;
   margin-left: 2%;
   font-family: "oswald";
   color: #f4b400;
-  font-size: 2vw;
+  font-size: 2.5vw;
   font-weight: 500;
 }
 
 .h3-title {
   display: flex;
   align-items: center;
-  padding: 2vw 0;
+  padding: 1vw 0;
 }
 
 h4 {
   font-size: 1.5vw;
-  font-weight: 600;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "oswald";
+  color: #f4b400;
 }
 
 .body {
+  line-height: 150%;
   background: url("../img/bg-2.jpg");
   /* Full height */
   width: 100%;
@@ -225,11 +238,15 @@ h4 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "arial";
+  font-family: "arimo";
   font-weight: 500;
   font-size: 1.2vw;
   color: black;
   width: 100%;
+}
+
+header {
+  box-shadow: 0px 2px 10px 0px rgba(135, 135, 135, 0.46);
 }
 
 .menu-container {
@@ -241,13 +258,27 @@ h4 {
   padding: 0.5vw 1vw;
 }
 
-.container {
+.container-main {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   max-width: 80%;
   width: 100%;
-  padding: 3vw 0 3vw 0;
+  padding: 0 0 3vw 0;
+}
+
+.container-footer {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  width: 100%;
+  padding: 2vw 0;
+}
+
+.container-infographic {
+  padding: 1.5vw 0;
+  background-color: rgba(255, 237, 215, 0.4);
 }
 
 .menu {
@@ -266,6 +297,7 @@ h4 {
 }
 .menu__unit {
   display: inline-flex;
+  align-items: baseline;
 }
 .menu__unit a {
   color: #184377;
@@ -273,9 +305,6 @@ h4 {
 }
 .menu__unit a:hover {
   color: #2c7bda;
-}
-.menu__unit li:hover {
-  transform: scale(1.2);
 }
 .menu__unit li {
   margin: 0 1vw;
@@ -285,7 +314,17 @@ h4 {
   text-transform: uppercase;
 }
 
+.btn-head {
+  background-color: #f7c011;
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
+  text-transform: uppercase;
+}
+
 .footer {
+  margin-top: 5vw;
+  background-color: rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 5px 15px 0px rgb(89, 89, 89);
   font-size: 1vw;
 }
 .footer__body {
@@ -295,7 +334,7 @@ h4 {
   justify-content: space-between;
 }
 .footer__logo img {
-  width: 25vw;
+  width: 30vw;
 }
 .footer__contacts img {
   width: 1.5vw;
@@ -308,7 +347,6 @@ h4 {
 }
 .footer__contacts a:hover {
   color: #2c7bda;
-  font-weight: 600;
 }
 
 .photo {
@@ -328,7 +366,7 @@ h4 {
   justify-content: center;
   align-items: center;
   position: absolute;
-  z-index: 100;
+  z-index: 1;
   font-size: 5vw;
   font-family: "oswald";
   color: white;
@@ -340,8 +378,9 @@ h4 {
   height: 35vw;
 }
 
-.carousel-control-prev, .carousel-control-next {
-  z-index: 1000;
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 2;
 }
 
 .headincl {
@@ -364,7 +403,6 @@ h4 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  line-height: 150%;
 }
 .about-main__body a {
   color: #2c7bda;
@@ -372,8 +410,21 @@ h4 {
   font-weight: 600;
 }
 .about-main__body a:hover {
-  font-weight: 700;
   color: #f4b400;
+}
+
+.btn1 {
+  background-color: #f7c011;
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
+  text-transform: uppercase;
+}
+
+.btn-head {
+  background-color: #f7c011;
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
+  text-transform: uppercase;
 }
 
 .forwhom-main__body {
@@ -387,24 +438,20 @@ h4 {
 .forwhom-main__body img {
   width: 10vw;
 }
-.forwhom-main__body a:hover {
-  transform: scale(1.2);
+.forwhom-item {
+  text-align: center;
 }
 
 .odesaoblast__body {
   width: 100%;
 }
-.odesaoblast__body_infographic {
-  padding-top: 3vw;
-}
-
 .infographic_description {
   margin-top: 2vw;
 }
 
 .top-block {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin: 3vw 0;
   width: 100%;
 }
@@ -418,8 +465,8 @@ h4 {
 
 .number {
   font-family: "Oswald";
-  font-size: 6vw;
-  color: #f7c011;
+  font-size: 5vw;
+  color: #2c7bda;
   font-weight: 600;
   display: flex;
   align-items: end;
@@ -427,7 +474,8 @@ h4 {
 }
 
 .description {
-  padding-top: 1vw;
+  padding-top: 2.5vw;
+  line-height: 100%;
 }
 
 .number-min {
@@ -435,7 +483,6 @@ h4 {
 }
 
 .about-page__top {
-  line-height: 150%;
   display: block;
 }
 .about-page__top_img {
@@ -480,9 +527,9 @@ h4 {
   background: url("../img/Check-Mark.svg") no-repeat;
   width: 15px;
   height: 15px;
-  transform: scale(1.2);
+  transform: scale(1.5);
   display: inline-block;
-  margin-right: 0.5vw;
+  margin-right: 0.7vw;
   vertical-align: middle;
 }
 .about-page__perevagy_item {
@@ -495,7 +542,6 @@ h4 {
   padding-bottom: 2vw;
   width: 85%;
   text-align: justify;
-  line-height: 180%;
 }
 .do__unit_title {
   font-family: "oswald";
@@ -509,7 +555,7 @@ h4 {
 .forwhom-page__title {
   display: flex;
   align-items: center;
-  margin: 3vw 0 3vw 0;
+  margin: 3vw 0 3vw 5vw;
 }
 .forwhom-page__top-unit-img {
   width: 15vw;
@@ -528,27 +574,25 @@ h4 {
   width: 60%;
 }
 .forwhom-page__unit_item {
-  padding-bottom: 1vw;
+  padding-bottom: 2vw;
 }
 .forwhom-page__unit_item h4 {
   padding-bottom: 1.5vw;
 }
 .forwhom-page__unit_item li {
   padding-bottom: 0.5vw;
-  line-height: 150%;
 }
 .forwhom-page__unit_item li p {
   margin-left: 3vw;
-  padding: 0.5vw 0;
+  padding: 0.2vw 0;
 }
 .forwhom-page__unit_item li::before {
   content: "";
   background: url("../img/Check-Mark.svg") no-repeat;
-  width: 15px;
-  height: 15px;
-  transform: scale(1.2);
+  width: 1.5vw;
+  height: 1.5vw;
   display: inline-block;
-  margin-right: 0.5vw;
+  margin-right: 0.7vw;
   vertical-align: middle;
 }
 
@@ -567,7 +611,7 @@ h4 {
   width: 50%;
 }
 .contacts__body_text li {
-  line-height: 180%;
+  padding: 0 0 2vw 0;
 }
 .contacts__body_text li img {
   width: 2vw;
@@ -592,7 +636,268 @@ h4 {
 }
 .soon {
   padding: 2vw 0;
-  font-size: 5vw;
+  font-size: 2vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.soon div {
+  padding-bottom: 2vw;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+.menu-mobile__header_body {
   display: flex;
-  justify-content: center;
+  margin: 5vw auto;
+  align-items: center;
+  max-width: 80%;
+  width: 100%;
+  overflow: hidden;
+}
+.menu-mobile__header_logo img {
+  width: 100%;
+}
+.menu-mobile__header_btn {
+  width: 70%;
+}
+@media screen and (min-width: 600px) {
+  .menu-mobile__header_body {
+    display: none;
+  }
+}
+.menu-mobile__header .show {
+  display: block;
+}
+
+.menu-mobile__open_body {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  background: #2c7bda;
+}
+.menu-mobile__open_body.show {
+  display: block;
+  z-index: 100;
+}
+.menu-mobile__open_body .close {
+  display: none;
+}
+.menu-mobile__open_title-group {
+  background: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5vw;
+  align-items: center;
+}
+.menu-mobile__open_btn-close {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: right;
+}
+.menu-mobile__open_title {
+  line-height: 150%;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 7vw;
+  font-weight: 600;
+  color: #f4b400;
+  text-transform: uppercase;
+}
+.menu-mobile__open_title img {
+  width: 100%;
+}
+.menu-mobile__open_list {
+  font-family: "oswald";
+  font-weight: 400;
+  font-size: 7vw;
+  padding: 10px 10vw;
+}
+.menu-mobile__open_list li {
+  padding: 4vw 0;
+  color: white;
+}
+
+.mobile-menu-exit {
+  max-width: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    box-shadow: none;
+  }
+  .body {
+    font-size: 5vw;
+  }
+  .container-main {
+    max-width: 90%;
+    width: 100%;
+    padding: 0;
+  }
+  .body-title {
+    margin: 8vw 0;
+  }
+  .h2_img {
+    width: 15vw;
+  }
+  h2 {
+    font-size: 9vw;
+    margin-left: 1.5vw;
+    line-height: 120%;
+  }
+  .about-main__body_text {
+    width: 90%;
+    margin-top: 4vw;
+  }
+  .about-main__body_text a {
+    color: #2c7bda;
+    font-size: 5vw;
+    font-weight: 600;
+  }
+  .forwhom-main {
+    display: none;
+  }
+  h3 {
+    font-size: 7vw;
+    margin-left: 2%;
+    text-align: left;
+  }
+  .h3-title {
+    padding: 6vw 0;
+  }
+  .h3_img {
+    width: 12vw;
+  }
+  .top-block {
+    margin: 6vw 0;
+  }
+  .number {
+    font-size: 12vw;
+    line-height: 100%;
+    color: #2c7bda;
+  }
+  .number-min {
+    line-height: 100%;
+  }
+  .description {
+    font-size: 4vw;
+    line-height: 100%;
+    padding-top: 2vw;
+  }
+  .infographic_description {
+    font-size: 4vw;
+    line-height: 100%;
+  }
+  .footer {
+    margin-top: 10vw;
+    font-size: 4vw;
+  }
+  .footer__body {
+    display: block;
+  }
+  .footer__logo {
+    display: block;
+    text-align: center;
+    padding: 2vw 0;
+  }
+  .footer__logo img {
+    width: 90%;
+  }
+  .footer__contacts img {
+    width: 6vw;
+    margin-right: 1.5vw;
+  }
+  .contacts__body_text {
+    display: block;
+  }
+  .contacts__body_text div {
+    width: 100%;
+  }
+  .contacts__body_text ul {
+    padding-bottom: 5vw;
+  }
+  .contacts__body_text li img {
+    width: 6vw;
+    margin-right: 1.5vw;
+  }
+  .forwhom-page__unit {
+    display: block;
+  }
+  .forwhom-page__unit_item {
+    padding-bottom: 4.5vw;
+  }
+  .forwhom-page__unit_item li::before {
+    width: 5vw;
+    height: 5vw;
+    margin-right: 2vw;
+  }
+  .forwhom-page__unit_item li {
+    padding-bottom: 2vw;
+  }
+  .forwhom-page__unit_L {
+    display: none;
+  }
+  .forwhom-page__unit_R {
+    width: 100%;
+  }
+  .forwhom-page h4 {
+    font-size: 5vw;
+  }
+  .team__unit {
+    margin-bottom: 7vw;
+  }
+  .team__unit_item-description {
+    line-height: 100%;
+  }
+  .team__unit_item-title {
+    font-size: 6vw;
+  }
+  .team__unit .about-page__top_img {
+    display: none;
+  }
+  .team__unit .about-page__top_img img {
+    width: 90%;
+  }
+  .team__unit .about-page__top_text {
+    margin-top: 0;
+  }
+  .team__unit .about-page__misia {
+    text-align: justify;
+    margin: 0;
+  }
+  .team__unit .about-page__misia_img {
+    display: none;
+  }
+  .do__unit {
+    padding-left: 2vw;
+    width: 100%;
+  }
+  .do__unit_title {
+    font-size: 7vw;
+  }
+  .about-page__perevagy_unit {
+    padding-left: 2vw;
+  }
+  .about-page__perevagy_unit li::before {
+    margin-right: 1.5vw;
+  }
+  .about-page__perevagy_item {
+    padding-bottom: 2vw;
+  }
+  .about-page__top_text P {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

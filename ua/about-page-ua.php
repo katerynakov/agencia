@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Агенція регіонального розвитку Одеської області</title>
     <link rel="stylesheet" href="../bootstrap-5.2.3/css/bootstrap.min.css">
     <script defer src="../bootstrap-5.2.3/js/bootstrap.js"></script>
 
@@ -21,7 +21,7 @@
     ?>
     <section class="main">
         <section class="about-page">
-            <div class="container">
+            <div class="container-main">
                 <div class="about-page__body">
                     <div class="about-page__top">
                         <div class="about-page__top_img"><img src="../img/agencia-block.svg" alt=""></div>

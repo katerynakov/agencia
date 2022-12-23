@@ -1,14 +1,16 @@
 @import "__nullstyle";
-@import "__fonts";
+// @import "__fonts";
+@import "__buttontothetop";
 
-
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@100;300;400;500;600;700;800&display=swap");
 
 
 .parallax {
-
 }
 h2 {
-  font-size: 2.5vw;
+  font-size: 3vw;
   width: fit-content;
   margin-left: 0.8vw;
   text-transform: uppercase;
@@ -17,44 +19,49 @@ h2 {
   font-weight: 500;
 }
 h3 {
-  font-size: 1.5vw;
   text-transform: uppercase;
   text-align: center;
   margin-left: 2%;
   font-family: "oswald";
-  
-  color:#f4b400;
-  font-size: 2vw;
+
+  color: #f4b400;
+  font-size: 2.5vw;
   font-weight: 500;
 }
 .h3-title {
   display: flex;
   align-items: center;
-  padding: 2vw 0;
+  padding: 1vw 0;
 }
-h4{
-
+h4 {
   font-size: 1.5vw;
-  font-weight: 600;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "oswald";
+      color: #f4b400;
 }
 .body {
-    background: url('../img/bg-2.jpg');
-    /* Full height */
-    width: 100%;
-    height: 100%; 
+  line-height: 150%;
+  background: url("../img/bg-2.jpg");
+  /* Full height */
+  width: 100%;
+  height: 100%;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-
-  font-family: "arial";
+  font-family: "arimo";
   font-weight: 500;
   font-size: 1.2vw;
   color: black;
   width: 100%;
+}
+header{
+
+  box-shadow: 0px 2px 10px 0px rgba(135,135,135,0.46);
 }
 .menu-container {
   display: flex;
@@ -65,15 +72,31 @@ h4{
   // background: grey;
   padding: 0.5vw 1vw;
 }
-.container {
+
+.container-main {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   max-width: 80%;
   width: 100%;
   // background: grey;
-  padding: 3vw 0 3vw 0;
+  padding: 0 0 3vw 0;
 }
+.container-footer {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  width: 100%;
+  // background: grey;
+  padding: 2vw 0;
+}
+
+.container-infographic {
+  padding: 1.5vw 0;
+  background-color: rgba(255, 237, 215, 0.4);
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -88,17 +111,15 @@ h4{
   }
   &__unit {
     display: inline-flex;
-a{
-  color: #184377;
-  font-weight: 600;
-}
-a:hover{
-  color: #2c7bda;
-}
-li:hover{
- 
-  transform: scale(1.2);
-}
+    align-items: baseline;
+    a {
+      color: #184377;
+      font-weight: 600;
+    }
+    a:hover {
+      color: #2c7bda;
+    }
+
     li {
       margin: 0 1vw;
     }
@@ -108,10 +129,21 @@ li:hover{
     text-transform: uppercase;
   }
 }
-
+.btn-head {
+  background-color: #f7c011;
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
+  text-transform: uppercase;
+}
 .footer {
+  margin-top: 5vw;
+  background-color: rgba(0, 0, 0, 0.06);
+  
+  box-shadow: 0px 5px 15px 0px rgba(89,89,89,1);
   font-size: 1vw;
   &__body {
+  
+
     display: flex;
     width: 100%;
     align-items: baseline;
@@ -119,7 +151,7 @@ li:hover{
   }
   &__logo {
     img {
-      width: 25vw;
+      width: 30vw;
     }
   }
 
@@ -128,51 +160,47 @@ li:hover{
       width: 1.5vw;
       margin-right: 0.8vw;
     }
-    
-    li{
+
+    li {
       padding: 0 0 0.5vw 0;
       display: flex;
       align-items: center;
     }
-    a:hover{
+    a:hover {
       color: #2c7bda;
-   font-weight: 600;
     }
-    
   }
 }
-.photo{
+.photo {
   overflow: hidden;
 }
 .carousel {
   height: 35vw;
   overflow: hidden;
-vertical-align: middle;
-position: relative;
+  vertical-align: middle;
+  position: relative;
 
-
-&_title{
-  display: flex;
-  min-width: 100%;
-  height: 100%;
-  justify-content: center;
-align-items: center;
-position: absolute;
-z-index: 100;
-font-size: 5vw;
-font-family: "oswald";
-color: white;
-text-shadow: 1px 1px 3px black;
-background: rgba(0, 0, 0, 0.2);
+  &_title {
+    display: flex;
+    min-width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    font-size: 5vw;
+    font-family: "oswald";
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    background: rgba(0, 0, 0, 0.2);
+  }
 }
-}
-.carousel-item{
- 
+.carousel-item {
   height: 35vw;
-  
 }
-.carousel-control-prev, .carousel-control-next{
-  z-index: 1000;
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 2;
 }
 
 .headincl {
@@ -196,7 +224,6 @@ background: rgba(0, 0, 0, 0.2);
   &__body {
     &_title {
     }
-  
 
     &_img {
     }
@@ -207,27 +234,37 @@ background: rgba(0, 0, 0, 0.2);
       margin-left: auto;
       margin-right: auto;
       text-align: center;
-      line-height: 150%;
+      
     }
-      a{
-     color: #2c7bda;
-     font-size: 1.3vw;
+    a {
+      color: #2c7bda;
+      font-size: 1.3vw;
       font-weight: 600;
-      }
-      a:hover{
-        font-weight: 700;
-        color: #f4b400;
-      }
-    
+    }
+    a:hover {
+      color: #f4b400;
+    }
   }
+}
+.btn1 {
+  background-color: #f7c011;
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
+  text-transform: uppercase;
+}
+.btn-head {
+  background-color: #f7c011;
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
+  text-transform: uppercase;
 }
 .forwhom-main {
   &__body {
-  
     width: 100%;
     display: flex;
     justify-content: space-around;
-    h3 {  color: #2c7bda;
+    h3 {
+      color: #2c7bda;
     }
     img {
       width: 10vw;
@@ -240,28 +277,24 @@ background: rgba(0, 0, 0, 0.2);
 
     &_invest {
     }
-    a:hover{
-      transform: scale(1.2);
-    }
   }
+}
+.forwhom-item {
+  text-align: center;
 }
 
 .odesaoblast {
-
   &__body {
-    
     width: 100%;
     &_title {
     }
 
     &_infographic {
-      padding-top: 3vw;
     }
   }
 }
 .infographic {
   &_title {
-
   }
 
   &_description {
@@ -269,9 +302,8 @@ background: rgba(0, 0, 0, 0.2);
   }
 }
 .top-block {
-
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin: 3vw 0;
   width: 100%;
   &_item {
@@ -285,23 +317,25 @@ background: rgba(0, 0, 0, 0.2);
 }
 .number {
   font-family: "Oswald";
-  font-size: 6vw;
-  color: #f7c011;
+  font-size: 5vw;
+  color: #2c7bda;
   font-weight: 600;
   display: flex;
   align-items: end;
   justify-content: center;
 }
 .description {
-  padding-top: 1vw;
+  padding-top: 2.5vw;
+  line-height: 100%;
 }
 .number-min {
   font-size: 3vw;
+
 }
 
 .about-page {
   &__top {
-    line-height: 150%;
+   
     display: block;
     &_img {
       display: flex;
@@ -358,9 +392,9 @@ background: rgba(0, 0, 0, 0.2);
         background: url("../img/Check-Mark.svg") no-repeat;
         width: 15px;
         height: 15px;
-        transform: scale(1.2);
+        transform: scale(1.5);
         display: inline-block;
-        margin-right: 0.5vw;
+        margin-right: 0.7vw;
         vertical-align: middle;
       }
     }
@@ -377,7 +411,7 @@ background: rgba(0, 0, 0, 0.2);
     padding-bottom: 2vw;
     width: 85%;
     text-align: justify;
-    line-height: 180%;
+   
     &_title {
       font-family: "oswald";
       font-weight: 600;
@@ -395,10 +429,9 @@ background: rgba(0, 0, 0, 0.2);
   &__title {
     display: flex;
     align-items: center;
-    margin: 3vw 0 3vw 0;
+    margin: 3vw 0 3vw 5vw;
   }
   &__top-unit-img {
-    
     width: 15vw;
   }
   &__unit {
@@ -414,28 +447,26 @@ background: rgba(0, 0, 0, 0.2);
       width: 60%;
     }
     &_item {
-      
-      padding-bottom: 1vw;
+      padding-bottom: 2vw;
       h4 {
         padding-bottom: 1.5vw;
       }
       li {
         padding-bottom: 0.5vw;
-        line-height: 150%;
         p {
           margin-left: 3vw;
-          padding: 0.5vw 0;
+          padding: 0.2vw 0;
         }
       }
 
       li::before {
         content: "";
         background: url("../img/Check-Mark.svg") no-repeat;
-        width: 15px;
-        height: 15px;
-        transform: scale(1.2);
+        width: 1.5vw;
+        height: 1.5vw;
+
         display: inline-block;
-        margin-right: 0.5vw;
+        margin-right: 0.7vw;
         vertical-align: middle;
       }
     }
@@ -456,17 +487,16 @@ background: rgba(0, 0, 0, 0.2);
       display: flex;
       min-width: 100%;
       justify-content: space-around;
-      div{
+      div {
         width: 50%;
       }
       li {
-        line-height: 180%;
-        img{
+        padding: 0 0 2vw 0;
+        img {
           width: 2vw;
           margin-right: 0.5vw;
         }
       }
-
     }
 
     &_map {
@@ -475,39 +505,357 @@ background: rgba(0, 0, 0, 0.2);
 }
 
 
-
 .team {
+  &__body {
+    width: 100%;
+    &_title {
+    }
+  }
 
-		&__body {
+  &__unit {
+   
+    &_item-img {
+      padding: 3vw 3vw 1vw 3vw;
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+      }
+    }
+
+    &_item-title {
+      font-family: "oswald";
+      font-size: 1.7vw;
+      padding-bottom: 0.7vw;
+      color: #2c7bda;
+    }
+
+    &_item-description {
+
+    }
+  }
+}
+
+.soon {
+  padding: 2vw 0;
+  font-size: 2vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  div {
+    padding-bottom: 2vw;
+  }
+}
+
+.menu-container {
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}
+// menu mobile
+
+.menu-mobile__header {
+  &_body {
+
+    display: flex;
+     margin: 5vw auto;
+    align-items: center;
+    max-width: 80%;
+    width: 100%;
+
+ 
+    overflow: hidden;
+  }
+
+  &_logo {
+    img {
+      width: 100%;
+    }
+    // width: auto;
+    // padding-top: 30px;
+    // text-align: center;
+  }
+  &_btn {
+    width: 70%;
+  }
+  @media screen and (min-width: 600px) {
+    &_body {
+      display: none;
+    }
+  }
+
+  .show {
+    display: block;
+  }
+}
+
+.menu-mobile__open {
+  
+  &_body {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+
+    
+    background: #2c7bda;
+    &.show {
+      display: block;
+      z-index: 100;
+    }
+    .close {
+      display: none;
+    }
+  }
+  &_title-group {
+    background: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   // border-bottom: 2px solid #2c7bda;
+    padding: 5vw;
+    align-items: center;
+  }
+  &_btn-close {
+    display: block;
+    width: fit-content;
+
+    text-align: right;
+  }
+
+  &_title {
+    img{
+      width: 100%;
+    }
+    line-height: 150%;
+    display: block;
+    width: fit-content;
+    font-size: 7vw;
+    font-weight: 600;
+    color: #f4b400;
+    text-transform: uppercase;
+  }
+
+  &_list {
+    font-family: "oswald";
+    font-weight: 400;
+    //border-bottom: 2px solid #2c7bda;
+    font-size: 7vw;
+
+    padding: 10px 10vw;
+    li {
+
+      padding: 4vw 0;
+      color: white;
+    }
+  }
+}
+
+.mobile-menu-exit {
+  max-width: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+//
+
+@media screen and (max-width: 600px) {
+  header {
+    box-shadow: none;
+}
+  .body {
+    font-size: 5vw;
+  }
+  .container-main {
+    max-width: 90%;
+    width: 100%;
+    padding: 0;
+  }
+  .body-title {
+    margin: 8vw 0;
+  }
+  .h2_img {
+    width: 15vw;
+  }
+  h2 {
+    font-size: 9vw;
+    margin-left: 1.5vw;
+    line-height: 120%;
+  }
+  .about-main {
+    &__body_text {
+      width: 90%;
+      margin-top: 4vw;
+      a {
+        color: #2c7bda;
+        font-size: 5vw;
+        font-weight: 600;
+      }
+    }
+  }
+  .forwhom-main {
+    display: none;
+  }
+  h3 {
+    font-size: 7vw;
+    margin-left: 2%;
+    text-align: left;
+  }
+  .h3-title {
+    padding: 6vw 0;
+  }
+  .h3_img {
+    width: 12vw;
+  }
+  .top-block {
+
+    margin: 6vw 0;
+    
+}
+  .number {
+    font-size: 12vw;
+    line-height: 100%;
+    color: #2c7bda;
+  }
+  .number-min {
+    line-height: 100%;
+}
+  .description {
+    font-size: 4vw;
+    line-height: 100%;
+    padding-top: 2vw;
+  }
+  .infographic_description {
+    font-size: 4vw;
+    line-height: 100%;
+  }
+  .footer {
+    margin-top: 10vw;
+    font-size: 4vw;
+    &__body {
+      display: block;
+  
+    }
+    &__logo {
+    display: block;
+     text-align: center;
+      padding: 2vw 0;
+      img {
+        width: 90%;
+       
+      }
+    }
+    &__contacts {
+      img {
+        width: 6vw;
+        margin-right: 1.5vw;
+      }
+    }
+  }
+  .contacts {
+    &__body {
+      &_text {
+        display: block;
+        div {
+          width: 100%;
+        }
+        ul {
+          padding-bottom: 5vw;
+        }
+        li {
+          img {
+            width: 6vw;
+            margin-right: 1.5vw;
+          }
+        }
+      }
+    }
+  }
+
+  .forwhom-page {
+    &__unit {
+      display: block;
+      &_item {
+        padding-bottom: 4.5vw;
+
+        li::before {
+          width: 5vw;
+          height: 5vw;
+          margin-right: 2vw;
+        }
+        li {
+          padding-bottom: 2vw;
+        }
+      }
+    }
+    &__unit_L {
+      display: none;
+    }
+    &__unit_R {
       width: 100%;
     }
 
-		&__unit {
+    h4 {
+      
+      font-size: 5vw;
+      
 
-			&_item-img {
-        padding: 3vw 3vw  1vw 3vw ;
-        img{
-          width: 100%;
-          height: auto;
-          border-radius: 5%;
+    }
+  }
+ 
+ 
+  .team__unit{
+    margin-bottom: 7vw;
+
+    &_item-description {
+      line-height: 100%;
+    }
+  &_item-title {
+    font-size: 6vw;
+  }
+  .about-page {
+    &__top {
+      &_img {
+        display: none;
+        img {
+          width: 90%;
         }
       }
-
-			&_item-title {
-        
-        font-family: "oswald";
-        font-size: 1.7vw;
-        padding-bottom: 0.7vw;
-        color: #2c7bda;
+      &_text {
+        margin-top: 0;
       }
-
-			&_item-description {}
-		}
+    }
+    &__misia {
+      text-align: justify;
+      margin: 0;
+      &_img {
+        display: none;
+      }
+    }
+  }
 }
+  .do__unit {
+    padding-left: 2vw;
 
-.soon{
-  padding: 2vw 0;
-  font-size: 5vw;
-  display: flex;
- justify-content: center;
+   width: 100%;
+    &_title {
+      font-size: 7vw;
+    }
+  }
+  .about-page__perevagy {
+    &_unit {
+      padding-left: 2vw;
+      li::before {
+        margin-right: 1.5vw;
+      }
+    }
+    &_item {
+      padding-bottom: 2vw;
+    }
+  }
+  .about-page__top_text P {
+    width: 100%;
+  }
+ 
 }

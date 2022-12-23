@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Головна - Агенція регіонального розвитку Одеської області</title>
 
 
 
-    <link rel="stylesheet" href="../agencia/bootstrap-5.2.3/css/bootstrap.min.css">
-    <script defer src="../agencia/bootstrap-5.2.3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../bootstrap-5.2.3/css/bootstrap.min.css">
+    <script defer src="../bootstrap-5.2.3/js/bootstrap.js"></script>
 
-    <link rel="stylesheet" href="../agencia/css/style.css">
+      <!-- jquery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
 
     <script type=text/js defer src="../js/main.js"></script>
 </head>
@@ -21,14 +23,14 @@
 <header>
         <div class="menu-container">
             <div class="menu">
-                <a href="../../agencia/index.php"><div class="menu__logo"><img src="../../agencia/img/logo.png" alt="logo"></div></a>
+                <a href="http://5.75.227.96/"><div class="menu__logo"><img src="../img/logo.png" alt="logo"></div></a>
                 <div class="menu__unit">
-                    <li><a href="../agencia/ua/about-page-ua.php">Про нас</a></li>
-                    <li><a href="../agencia/ua/team-ua.php">Команда</a></li>
-                    <li><a href="../agencia/ua/forwhom-ua.php">Для кого</a></li>
-                    <li><a href="../agencia/ua/news-ua.php">Новини</a></li>
-                    <li><a href="../agencia/ua/contacts-ua.php">Контакти</a></li>
-                    <li><a target="_blank" href=" https://proukraine.com.ua/map/">Інвестиційний портал</a></li>
+                    <li><a href="../ua/about-page-ua.php">Про нас</a></li>
+                    <li><a href="../ua/team-ua.php">Команда</a></li>
+                    <li><a href="../ua/forwhom-ua.php">Для кого</a></li>
+                    <li><a href="../ua/news-ua.php">Новини</a></li>
+                    <li><a href="../ua/contacts-ua.php">Контакти</a></li>
+                    <li><button  class="btn-head"><a target="_blank" href=" https://proukraine.com.ua/map/">Інвестиційний портал</a></button></li>
                 </div>
                 <!-- en/ua -->
                 <div class="menu__lang">
@@ -36,6 +38,35 @@
                 </div>
             </div>
         </div>
+
+          <!-- menu mobile -->
+
+          <div class="menu-mobile__header_body">
+            <div class="menu-mobile__header_logo"><a href="http://5.75.227.96/"><img src="img/logo.png" alt="logo"></a></div>
+            <div class="menu-mobile__header_btn" id="menu-mobile__header_btn"><img src="img/mobile-menu-nav-btn.svg" alt="menu"></div>
+        </div>
+
+        <div class="menu-mobile__open_body" id="menu-mobile__open_body">
+            <div class="menu-mobile__open_title-group">
+                <div class="menu-mobile__open_title"><a href="http://5.75.227.96/"><img src="img/logo.png" alt="logo"></a href="http://5.75.227.96/"></div>
+                <div class="menu-mobile__open_btn-close" id="menu-mobile__open_btn-close"><button><img class="mobile-menu-exit" src="img/exit.svg" alt=""></button></div>
+
+            </div>
+            <div class="menu-mobile__open_list">
+                <ul>
+                    <li><a href="../ua/about-page-ua.php">Про нас</a></li>
+                    <li><a href="../ua/team-ua.php">Команда</a></li>
+                    <li><a href="../ua/forwhom-ua.php">Для кого</a></li>
+                    <li><a href="../ua/news-ua.php">Новини</a></li>
+                    <li><a href="../ua/contacts-ua.php">Контакти</a></li>
+                    <li><a target="_blank" href="https://proukraine.com.ua/map/">Інвестиційний портал</a></li>
+                </ul>
+            </div>
+
+
+
+        </div>
+        <!--  -->
     </header>
 
     <section class="main">
@@ -46,13 +77,13 @@
                 <div class="carousel_title">Одеська область</div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../agencia/img/ods-obl-1.jpg" class="d-block w-100" alt="...">
+                        <img src="../img/ods-obl-1.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="../agencia/img/ods-obl-2.jpg" class="d-block w-100" alt="...">
+                        <img src="../img/ods-obl-2.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="../agencia/img/odessa3.jpg" class="d-block w-100" alt="...">
+                        <img src="../img/odessa3.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -71,18 +102,18 @@
         </section>
 
         <section class="about-main">
-            <div class="container">
+            <div class="container-main">
                 <div class="about-main__body">
 
                     <div class="about-main__body_title body-title" >
 
-                        <img class="h2_img" src="../agencia/img/bluearrow.svg" alt="">
+                        <img class="h2_img" src="../img/bluearrow.svg" alt="">
                         <h2>Про Агенцію Розвитку Одеської області</h2>
                     </div>
                     <div class="about-main__body_text">
                         <p>Агенція регіонального розвитку Одеської області - це неприбуткова та не бюджетна установа, що
                             створена на засадах партнерства між державним, приватним та громадським секторами з метою
-                            ефективної реалізації державної регіональної політики. <a class="about-main__body_text-a" href="../agencia/ua/about-page-ua.php">Детальніше...</a></p>
+                            ефективної реалізації державної регіональної політики. <a class="about-main__body_text-a" href="../ua/about-page-ua.php">Детальніше...</a></p>
                     </div>
 
 
@@ -90,23 +121,23 @@
             </div>
         </section>
         <section class="forwhom-main">
-            <div class="container ">
+            <div class="container-main ">
                 <div class="forwhom-main__body">
-                   <a href="../agencia/ua/forwhom-ua.php">
+                   <a href="../ua/forwhom-ua.php">
                         <div class="forwhom-main__body_business ">
-                            <img src="../agencia/img/business.svg" alt="">
+                            <img src="../img/business.svg" alt="">
                             <h3>Бізнесу</h3>
                         </div>
                    </a>
-                   <a  href="../agencia/ua/forwhom-ua.php">
+                   <a  href="../ua/forwhom-ua.php">
                         <div class="forwhom-main__body_gromadam forwhom_item">
-                            <img src="../agencia/img/gromadam.svg" alt="">
+                            <img src="../img/gromadam.svg" alt="">
                             <h3>Громадам</h3>
                         </div>
                    </a>
-                    <a  href="../agencia/ua/forwhom-ua.php">
+                    <a  href="../ua/forwhom-ua.php">
                         <div class="forwhom-main__body_invest forwhom_item">
-                            <img src="../agencia/img/invest.svg" alt="">
+                            <img src="../img/invest.svg" alt="">
                             <h3>Інвесторам</h3>
                         </div>
                     </a>
@@ -114,15 +145,15 @@
             </div>
         </section>
         <section class="odesaoblast">
-            <div class="container">
+            <div class="container-main">
                 <div class="odesaoblast__body">
                     <div class="odesaoblast__body_title body-title">
-                        <img class="h2_img" src="../agencia/img/bluearrow.svg" alt="">
+                        <img class="h2_img" src="../img/bluearrow.svg" alt="">
                         <h2>Чому Одеська область:</h2>
                     </div>
                     <div class="odesaoblast__body_infographic">
                         <div class="infographic_title h3-title">
-                            <img class="h3_img" src="../agencia/img/yellowarrow.svg" alt="">
+                            <img class="h3_img" src="../img/yellowarrow.svg" alt="">
                             <h3>Адміністративно-територіальний устрій </h3>
                         </div>
                         <div class="infographic_description"></div>
@@ -147,7 +178,7 @@
                     </div>
                     <div class="odesaoblast__body_infographic">
                         <div class="infographic_title h3-title">
-                            <img class="h3_img" src="../agencia/img/yellowarrow.svg" alt="">
+                            <img class="h3_img" src="../img/yellowarrow.svg" alt="">
                             <h3>Кількість населення</h3>
                         </div>
                         <div class="top-block">
@@ -167,7 +198,7 @@
                     </div>
                     <div class="odesaoblast__body_infographic">
                         <div class="infographic_title h3-title">
-                            <img class="h3_img" src="../agencia/img/yellowarrow.svg" alt="">
+                            <img class="h3_img" src="../img/yellowarrow.svg" alt="">
                             <h3>Вигідне економіко-географічне розташування</h3>
                         </div>
                         <div class="infographic_description"> Межування з 3-ма областями з населенням більше ніж 3,5
@@ -203,7 +234,7 @@
                     </div>
                     <div class="odesaoblast__body_infographic">
                         <div class="infographic_title h3-title">
-                            <img class="h3_img" src="../agencia/img/yellowarrow.svg" alt="">
+                            <img class="h3_img" src="../img/yellowarrow.svg" alt="">
                             <h3>Представлені всі види транспорту</h3>
                         </div>
                         <div class="top-block">
@@ -225,7 +256,7 @@
 
                     <div class="odesaoblast__body_infographic">
                         <div class="infographic_title h3-title">
-                            <img class="h3_img" src="../agencia/img/yellowarrow.svg" alt="">
+                            <img class="h3_img" src="../img/yellowarrow.svg" alt="">
                             <h3>Сприятливі умови для сільського господарства</h3>
                         </div>
                         <div class="top-block">
@@ -247,7 +278,7 @@
 
                     <div class="odesaoblast__body_infographic">
                         <div class="infographic_title h3-title">
-                            <img class="h3_img" src="../agencia/img/yellowarrow.svg" alt="">
+                            <img class="h3_img" src="../img/yellowarrow.svg" alt="">
                             <h3>Корисні копалини</h3>
                         </div>
                         <div class="top-block">
@@ -264,7 +295,7 @@
                     </div>
                     <div class="odesaoblast__body_infographic">
                         <div class="infographic_title h3-title">
-                            <img class="h3_img" src="../agencia/img/yellowarrow.svg" alt="">
+                            <img class="h3_img" src="../img/yellowarrow.svg" alt="">
                             <h3>
                                 Трудовий потенціал
                             </h3>
@@ -275,7 +306,7 @@
                                 <div class="description">закладів професійно-технічної освіти</div>
                             </div>
                             <div class="top-block_item">
-                                <div class="number">> 40</div>
+                                <div class="number">>40</div>
                                 <div class="description">вищих навчальних закладів</div>
                             </div>
                             <div class="top-block_item">
@@ -287,18 +318,18 @@
                     </div>
                     <div class="odesaoblast__body_infographic">
                         <div class="infographic_title h3-title">
-                            <img class="h3_img" src="../agencia/img/yellowarrow.svg" alt="">
+                            <img class="h3_img" src="../img/yellowarrow.svg" alt="">
                             <h3>
                                 Бізнес середовище
                             </h3>
                         </div>
                         <div class="top-block">
                             <div class="top-block_item">
-                                <div class="number">> 130 <div class="number-min">тис.</div></div>
+                                <div class="number">>130 <div class="number-min">тис.</div></div>
                                 <div class="description">закладів професійно-технічної освіти</div>
                             </div>
                             <div class="top-block_item">
-                                <div class="number">> 20 </div>
+                                <div class="number">>20 </div>
                                 <div class="description">вищих навчальних закладів</div>
                             </div>
 
@@ -327,7 +358,7 @@
                     </div>
                     <div class="odesaoblast__body_infographic">
                         <div class="infographic_title h3-title">
-                            <img class="h3_img" src="../agencia/img/yellowarrow.svg" alt="">
+                            <img class="h3_img" src="../img/yellowarrow.svg" alt="">
                             <h3>
                                 Туристична привабливість
                             </h3>
@@ -337,7 +368,7 @@
                         </div>
                         <div class="top-block">
                             <div class="top-block_item">
-                                <div class="number"> > 200</div>
+                                <div class="number">>200</div>
                                 <div class="description">закладів розміщення</div>
                             </div>
                             <div class="top-block_item">
@@ -356,7 +387,7 @@
                                 <div class="description">природно-заповідних територій</div>
                             </div>
                             <div class="top-block_item">
-                                <div class="number">> 50</div>
+                                <div class="number">>50</div>
                                 <div class="description"> туристичних маршрутів</div>
                             </div>
                             <div class="top-block_item">
@@ -373,21 +404,35 @@
 
     </section>
     <footer class="footer">
-        <div class="container">
+        <div class="container-footer">
             <div class="footer__body">
-                <div class="footer__logo"><a href="../../agencia/index.php"><img src="../../agencia/img/logo.png" alt=""></a></div>
+                <div class="footer__logo"><a href="http://5.75.227.96/"><img src="../img/logo.png" alt=""></a></div>
                 <div class="footer__contacts">
                 <ul>
-                            <li> <img src="../agencia/img/contact/placeholder.svg" alt=""> вул. Рішельєвська, 8, м. Одеса, Україна, 65026</li>
-                            <li> <img src="../agencia/img/contact/telephone.svg" alt=""> <a href="tel:+380933873555">(093) 387-35-55</a></li>
-                            <li> <img src="../agencia/img/contact/mail.svg" alt=""> <a href="mailto:odesarda@gmail.com">odesarda@gmail.com</a></li>
-                            <li> <img src="../agencia/img/facebook.svg" alt=""> <a target="_blank" href="https://www.facebook.com/OdesaRDA">www.facebook.com/OdesaRDA</a></li>
+                            <li> <img src="../img/contact/placeholder.svg" alt=""> вул. Рішельєвська, 8, м. Одеса, Україна, 65026</li>
+                            <li> <img src="../img/contact/telephone.svg" alt=""> <a href="tel:+380933873555">(093) 387-35-55</a></li>
+                            <li> <img src="../img/contact/mail.svg" alt=""> <a href="mailto:odesarda@gmail.com">odesarda@gmail.com</a></li>
+                            <li> <img src="../img/facebook.svg" alt=""> <a target="_blank" href="https://www.facebook.com/OdesaRDA">www.facebook.com/OdesaRDA</a></li>
                         </ul>
                     </div>
             </div>
         </div>
     </footer>
+    <script>
+//mob-menu-show
+$(function() {
+  $('#menu-mobile__header_btn').on('click', function() {
     
+    $('#menu-mobile__open_body').toggleClass('show');
+  })
+  });
+  // mob-menu-hide
+  $(function() {
+  $('#menu-mobile__open_btn-close').on('click', function() {
+    $('#menu-mobile__open_body').removeClass('show');
+  })
+  });
+  </script>
 </body>
 
 </html>
