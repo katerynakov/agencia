@@ -25,8 +25,7 @@
       $('#menu-mobile__open_body').toggleClass('show');
     })
     });
-    
-    
+  
     // мобильное меню - спрятать
     $(function() {
     $('#menu-mobile__open_btn-close').on('click', function() {

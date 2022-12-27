@@ -15,7 +15,7 @@
 </head>
 
 <body class="body">
-
+<a id="buttontothetop"></a>
 
     <?php
     include('header-ua.php');
@@ -34,7 +34,7 @@
                     </div>
 
                     <div class="container-main">
-                        <form class="row g-3" action="https://formsubmit.co/kovalenko.er@gmail.com" method="POST">
+                        <form class="row g-3" action="https://formsubmit.co/odesarda@gmail.com" method="POST">
                             <!-- Honeypot -->
                             <input type="text" name="_honey" style="display: none;">
 
@@ -103,7 +103,7 @@
     <footer class="footer">
         <div class="container-footer">
             <div class="footer__body">
-                <div class="footer__logo"><a href="http://5.75.227.96/"><img src="../img/logo.png" alt=""></a></div>
+                <div class="footer__logo"><a href="http://rdaod.com.ua/"><img src="../img/logo.png" alt=""></a></div>
 
             </div>
         </div>

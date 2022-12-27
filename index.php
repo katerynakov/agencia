@@ -8,22 +8,30 @@
     <title>Головна - Агенція регіонального розвитку Одеської області</title>
 
 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 
-    <link rel="stylesheet" href="../bootstrap-5.2.3/css/bootstrap.min.css">
-    <script defer src="../bootstrap-5.2.3/js/bootstrap.js"></script>
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-      <!-- jquery -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="../css/style.css">
 
-    <script type=text/js defer src="../js/main.js"></script>
+<link rel="stylesheet" href="bootstrap-5.2.3/css/bootstrap.min.css">
+<script src="bootstrap-5.2.3/js/bootstrap.js"></script>
+
+
+
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
+    
+
 </head>
 
 <body class="body parallax">
+
+<a id="buttontothetop"></a>
 <header>
         <div class="menu-container">
             <div class="menu">
-                <a href="http://5.75.227.96/"><div class="menu__logo"><img src="../img/logo.png" alt="logo"></div></a>
+                <a href="http://rdaod.com.ua/"><div class="menu__logo"><img src="../img/logo.png" alt="logo"></div></a>
                 <div class="menu__unit">
                     <li><a href="../ua/about-page-ua.php">Про нас</a></li>
                     <li><a href="../ua/team-ua.php">Команда</a></li>
@@ -42,13 +50,13 @@
           <!-- menu mobile -->
 
           <div class="menu-mobile__header_body">
-            <div class="menu-mobile__header_logo"><a href="http://5.75.227.96/"><img src="img/logo.png" alt="logo"></a></div>
+            <div class="menu-mobile__header_logo"><a href="http://rdaod.com.ua/"><img src="img/logo.png" alt="logo"></a></div>
             <div class="menu-mobile__header_btn" id="menu-mobile__header_btn"><img src="img/mobile-menu-nav-btn.svg" alt="menu"></div>
         </div>
 
         <div class="menu-mobile__open_body" id="menu-mobile__open_body">
             <div class="menu-mobile__open_title-group">
-                <div class="menu-mobile__open_title"><a href="http://5.75.227.96/"><img src="img/logo.png" alt="logo"></a href="http://5.75.227.96/"></div>
+                <div class="menu-mobile__open_title"><a href="http://rdaod.com.ua/"><img src="img/logo.png" alt="logo"></a href="http://rdaod.com.ua/"></div>
                 <div class="menu-mobile__open_btn-close" id="menu-mobile__open_btn-close"><button><img class="mobile-menu-exit" src="img/exit.svg" alt=""></button></div>
 
             </div>
@@ -406,7 +414,7 @@
     <footer class="footer">
         <div class="container-footer">
             <div class="footer__body">
-                <div class="footer__logo"><a href="http://5.75.227.96/"><img src="../img/logo.png" alt=""></a></div>
+                <div class="footer__logo"><a href="http://rdaod.com.ua/"><img src="../img/logo.png" alt=""></a></div>
                 <div class="footer__contacts">
                 <ul>
                             <li> <img src="../img/contact/placeholder.svg" alt=""> вул. Рішельєвська, 8, м. Одеса, Україна, 65026</li>
@@ -418,21 +426,7 @@
             </div>
         </div>
     </footer>
-    <script>
-//mob-menu-show
-$(function() {
-  $('#menu-mobile__header_btn').on('click', function() {
-    
-    $('#menu-mobile__open_body').toggleClass('show');
-  })
-  });
-  // mob-menu-hide
-  $(function() {
-  $('#menu-mobile__open_btn-close').on('click', function() {
-    $('#menu-mobile__open_body').removeClass('show');
-  })
-  });
-  </script>
+   
 </body>
 
 </html>

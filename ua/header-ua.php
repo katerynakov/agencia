@@ -23,7 +23,7 @@
     <header>
         <div class="menu-container">
             <div class="menu">
-                <a href="http://5.75.227.96/">
+                <a href="http://rdaod.com.ua/">
                     <div class="menu__logo"><img src="../img/logo.png" alt="logo"></div>
                 </a>
                 <div class="menu__unit">
@@ -45,13 +45,13 @@
         <!-- menu mobile -->
 
         <div class="menu-mobile__header_body">
-            <div class="menu-mobile__header_logo"><a href="http://5.75.227.96/"><img src="../img/logo.png" alt="logo"></a></div>
+            <div class="menu-mobile__header_logo"><a href="http://rdaod.com.ua/"><img src="../img/logo.png" alt="logo"></a></div>
             <div class="menu-mobile__header_btn" id="menu-mobile__header_btn"><img src="../img/mobile-menu-nav-btn.svg" alt="menu"></div>
         </div>
 
         <div class="menu-mobile__open_body" id="menu-mobile__open_body">
             <div class="menu-mobile__open_title-group">
-                <div class="menu-mobile__open_title"><a href="http://5.75.227.96/"><img src="../img/logo.png" alt="logo"></a></div>
+                <div class="menu-mobile__open_title"><a href="http://rdaod.com.ua/"><img src="../img/logo.png" alt="logo"></a></div>
                 <div class="menu-mobile__open_btn-close" id="menu-mobile__open_btn-close"><button><img class="mobile-menu-exit" src="../img/exit.svg" alt=""></button></div>
 
             </div>
